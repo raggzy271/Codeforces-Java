@@ -26,14 +26,14 @@ public class SeriesOfCrimes {
 
         sc.close();
 
-        for (Entry entry : abscissas.entrySet()) {
+        for (Entry<Integer, Integer> entry : abscissas.entrySet()) {
             if (entry.getValue().equals(1)) {
                 System.out.print(entry.getKey() + " ");
                 break;
             }
         }
         
-        for (Entry entry : ordinates.entrySet()) {
+        for (Entry<Integer, Integer> entry : ordinates.entrySet()) {
             if (entry.getValue().equals(1)) {
                 System.out.print(entry.getKey());
                 break;
